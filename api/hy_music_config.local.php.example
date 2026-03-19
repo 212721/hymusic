@@ -1,0 +1,32 @@
+<?php
+/**
+ * 本地音乐 API 配置（示例）
+ * 复制为 `api/hy_music_config.local.php` 后填写即可。
+ */
+
+return [
+    // TuneHub API base
+    'tunehub_base' => 'https://tunehub.sayqz.com/api',
+
+    // API Key（建议放这里，不要写进前端 JS）
+    'tunehub_key' => '',
+
+    // 鉴权方式（根据实际 API 调整）
+    // - query_key: ?key=...
+    // - bearer: Authorization: Bearer ...
+    // - x_api_key: X-API-Key: ...
+    'auth_mode' => 'query_key',
+
+    // 当 TuneHub 上游不可用/未配准端点时，是否允许自动降级到公开随机音乐 API
+    'allow_fallback' => true,
+
+    // 随机歌曲端点尝试顺序（按需调整）
+    // 注意：`https://tunehub.sayqz.com/api` 本身是前端页面（HTML），需要填写真实接口路径。
+    // 你可以先访问：
+    // - http://localhost/api/hy_music_random.php?probe=3（看哪些 path 不是 404）
+    // 找到能返回 JSON（包含歌曲 url / lrc 等字段）的那条路径，再写到这里。
+    'random_candidates' => [
+        // 示例（请替换为 TuneHub 的真实随机接口）：
+        // '/YOUR_RANDOM_ENDPOINT',
+    ],
+];
