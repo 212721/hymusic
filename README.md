@@ -44,6 +44,8 @@ https://your-site.com/hy-player/
 'tunehub_key' => 'your_api_key_here'
 ```
 
+> **如何获取 Key？** 前往 [TuneHub API Key 申请页](https://linux.do/t/topic/1326425) 获取你自己的 Key。
+>
 > 仓库内附带了一个公开测试 Key，可直接使用但**不保证长期可用**。正式部署时请务必替换为你自己的 Key。
 
 ### 第三步：验证部署
