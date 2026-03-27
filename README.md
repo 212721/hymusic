@@ -1,3 +1,4 @@
+
 # 🎵 HY Music Player
 
 > 可嵌入任意网页的悬浮音乐播放器组件，上传目录、插入一段脚本即可使用。
@@ -174,3 +175,4 @@ hy-player/
 Copyright (c) 2026 HY Music Player
 Original project name: hymusic
 ```
+## linux.do
