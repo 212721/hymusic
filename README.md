@@ -176,3 +176,6 @@ Copyright (c) 2026 HY Music Player
 Original project name: hymusic
 ```
 ## linux.do
+```
+https://linux.do/
+```
